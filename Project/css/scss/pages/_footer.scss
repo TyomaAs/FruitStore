@@ -1,3 +1,65 @@
 .footer {
 	background-color: $main-gray;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 10px 0px;
+	.container {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: center;
+		row-gap: 10px;
+		margin: 10px 0 0 0;
+	}
+	&__info {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: flex-start;
+		column-gap: 10px;
+		min-height: 100px;
+	}
+	&__navbar {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		row-gap: 0.6em;
+		.to-left {
+			align-items: flex-end;
+		}
+		.to-right {
+			align-items: flex-start;
+		}
+	}
+	&__item {
+		display: inline-block;
+		a {
+			transition: all 0.3s ease-in-out;
+			&:hover {
+				text-decoration: none;
+				color: $secondary-gray;
+			}
+		}
+		&-button {
+			color: #000;
+			background-color: $white;
+			padding: 5px 15px;
+			border-radius: 15px;
+			transition: all 0.3s ease-in-out;
+			&:hover {
+				transform: scale(1.1);
+				a {
+					color: inherit;
+				}
+			}
+		}
+	}
+	&__hor-line {
+		width: 1px;
+		min-height: 135px;
+		height: 100%;
+		background-color: $white;
+	}
 }

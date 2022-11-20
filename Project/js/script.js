@@ -1,7 +1,7 @@
 "use strict"
 
-const iconMenu = document.querySelector('.navigation__icon');
-const bodyMenu = document.querySelector('.navigation__body');
+const iconMenu = document.querySelector('.navbar__icon');
+const bodyMenu = document.querySelector('.navbar__body');
 if (iconMenu) {
 	iconMenu.addEventListener("click", function (e) {
 		document.body.classList.toggle('_lock');

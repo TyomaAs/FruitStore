@@ -1,36 +1,8 @@
-// .header {
-// 	background-color: $main-gray;
-// 	.container {
-// 		display: flex;
-// 		flex-direction: row;
-// 		justify-content: space-between;
-// 		align-items: center;
-// 	}
-// 	&__logo {
-// 		display: inline-flex;
-// 		flex-direction: row;
-// 		justify-content: flex-start;
-// 		align-items: center;
-// 		column-gap: 10px;
-// 	}
-// 	&__image {
-// 		width: 50px;
-// 		height: 50px;
-// 		display: flex;
-// 		justify-content: center;
-// 		align-items: center;
-// 		border-radius: 50%;
-// 		background-color: $white;
-// 	}
-// 	&__title {
-// 		font-size: 36px;
-// 		font-weight: 700;
-// 	}
-// }
 .header {
 	z-index: 100;
 	width: 100%;
 	min-height: 90px;
+	background-color: $main-gray;
 	.container {
 		display: flex;
 		flex-direction: row;
@@ -41,8 +13,12 @@
 	&__logo {
 		z-index: 101;
 		transition: all 0.5s ease-in-out;
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		column-gap: 20px;
 		&:hover {
-			transform: scale(1.4);
+			transform: scale(1.1);
 		}
 		@media screen and (max-width: $tablet) {
 			&:hover {
@@ -50,21 +26,48 @@
 			}
 		}
 	}
+	&__image {
+		width: 50px;
+		height: 50px;
+		border-radius: 50%;
+		background-color: $white;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	&__title {
+		font-weight: 700;
+		font-size: 36px;
+		line-height: 44px;
+		a {
+			transition: all 0.5s ease-in-out;
+			&:hover {
+				color: #aaa;
+				text-decoration: none;
+			}
+		}
+		@media screen and (max-width: $mobile-max) {
+			display: none;
+		}
+	}
 	&__navbar {
 		display: flex;
 		flex-direction: row;
-		height: 1em;
-		line-height: 1em;
+		justify-content: center;
+		align-items: center;
+		height: 100%;
 	}
 	.navbar {
 		&__list {
-			display: inline-flex;
+			display: flex;
 			flex-direction: row;
-			justify-content: space-between;
+			justify-content: flex-end;
 			align-items: center;
-			column-gap: 30px;
+			column-gap: 20px;
+			height: 100%;
 		}
 		&__item {
+			font-size: 24px;
 			a {
 				transition: all 0.3s ease-in-out;
 				&:hover {
@@ -73,6 +76,25 @@
 					text-shadow: 0px 0px 5px #aaa;
 					font-size: 1.2em;
 				}
+			}
+			&-button {
+				display: flex;
+				color: $background;
+				background-color: $white;
+				width: 110px;
+				height: 48px;
+				justify-content: center;
+				align-items: center;
+				border-radius: 20px;
+				transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out 0.3s;
+				cursor: pointer;
+				&:hover {
+					transform: scale(1.1);
+					box-shadow: 0px 0px 10px $white;
+				}
+			}
+			&__body {
+				height: 20px;
 			}
 		}
 		@media screen and (max-width: $tablet) {
