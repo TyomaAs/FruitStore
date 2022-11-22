@@ -12,13 +12,66 @@
 		max-height: 610px;
 		&__image {
 			width: 100%;
-			max-width: 1320px;
+			max-width: 1200px;
 			min-height: 100%;
 			margin: 0 auto;
 			img {
 				width: 100%;
 				height: 100%;
 				object-fit: cover;
+			}
+		}
+	}
+	.price {
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		align-items: flex-start;
+		padding: 35px 0;
+		row-gap: 40px;
+		&__heading {
+			width: 100%;
+			justify-self: flex-start;
+			align-self: center;
+			padding: 20px 0 25px 10px;
+		}
+		&__card {
+			flex: 0 0 auto;
+			max-width: 300px;
+			background-color: $main-dimgray;
+			border-radius: 20px;
+			overflow: hidden;
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-start;
+			align-items: flex-start;
+			.card {
+				&__image {
+					width: 100%;
+					height: 270px;
+					img {
+						width: 100%;
+						height: 100%;
+						object-fit: cover;
+					}
+				}
+				&__text {
+					padding: 15px;
+					display: flex;
+					flex-direction: column;
+					justify-content: flex-start;
+					align-items: flex-start;
+					flex: 1 1 auto;
+				}
+				&__heading {
+					font-size: 24px;
+					margin-left: 10px;
+				}
+				&__info {
+					font-size: 1rem;
+				}
 			}
 		}
 	}

@@ -9,3 +9,10 @@ if (iconMenu) {
 		bodyMenu.classList.toggle('_active');
 	})
 }
+
+new Swiper('.image-slider', {
+	navigation: {
+		nextEl: '.swiper-button-next',
+		prevEl: '.swiper-button-prev'
+	},
+});
