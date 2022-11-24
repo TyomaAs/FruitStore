@@ -1,0 +1,11 @@
+{
+	"name": "video-htmp-tmp",
+	"version": "1.0.0",
+	"description": "",
+	"main": "gulpfile.js",
+	"scripts": {
+		"test": "echo \" Error: no test specificed\" exit 1"
+	},
+	"author": "",
+	"licence": "ISC"
+}
