@@ -192,6 +192,30 @@ footer {
 .modal__window-workspace input[type=password]:focus::placeholder {
   color: #aaa;
 }
+.modal__window-workspace .button {
+  display: block;
+  width: 100px;
+  height: 30px;
+  border-radius: 20px;
+  background-color: #d9d9d9;
+  color: #000;
+  border: none;
+  padding: 0;
+  transition: all 0.3s ease;
+}
+.modal__window-workspace .button:hover {
+  box-shadow: 0px 0px 10px #fff;
+  background-color: #fff;
+}
+.modal__create a {
+  transition: all 0.3s ease;
+  color: #d9d9d9;
+}
+.modal__create a:hover {
+  color: #fff;
+  text-decoration: none;
+  text-shadow: 0px 0px 5px #d9d9d9;
+}
 .modal._active {
   left: 0;
   opacity: 1;
@@ -280,6 +304,7 @@ footer {
 }
 .header .navbar__item {
   font-size: 24px;
+  font-weight: 300;
 }
 .header .navbar__item a {
   transition: all 0.3s ease-in-out;

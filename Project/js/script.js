@@ -44,11 +44,3 @@ new Swiper('.image-slider', {
 		clickable: true,
 	},
 });
-
-let today = new Date();
-let options = {
-	hour: 'numeric',
-	minute: 'numeric',
-};
-let time = today.toLocaleDateString('en-US', options);
-console.log(time);
