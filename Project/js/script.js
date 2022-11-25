@@ -26,12 +26,12 @@ if (modalButton1) {
 		modal.classList.toggle('_active');
 		body.classList.toggle('_active');
 	});
-	if (modalCross) {
-		modalCross.addEventListener("click", function (e) {
-			modal.classList.toggle('_active');
-			body.classList.toggle('_active');
-		});
-	}
+}
+if (modalCross) {
+	modalCross.addEventListener("click", function (e) {
+		modal.classList.toggle('_active');
+		body.classList.toggle('_active');
+	});
 }
 
 new Swiper('.image-slider', {
